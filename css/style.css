@@ -1,67 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     margin: 0;
-    padding: 0;
-}
+    padding: 0 ;
+    box-sizing: border-box;
 
-section{
-    width: 100%;
+}
+body{
+    font-family: "Open Sans", sans-serif;
 }
 
 .container{
     width: 1140px;
     margin: 0 auto;
-    border: 5px solid rgb(89, 0, 255);
-    margin-top: 100px;
 }
-.main-box{
-    display: flex;
-    justify-content: end;
-    align-items: end;
+ul{
+    margin: 0;
+    padding:0;
+
+}
+a, a:hover{
+    text-decoration: none;
+}
+
+/*banner section css code start*/
+
+.banner-section{
+    width: 100%;
     height: 70vh;
+    margin: 80px 0;
+    background:url(../img/intro.png)center right no-repeat;
+    background-size: auto;
+}
+
+.banner-inner{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+.banner-section .banner-inner .left, .banner-section .banner-inner .right{
+    flex-basis: 50%;
+}
+.banner-section .banner-inner .left h1{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #0e72cc;
+}
+
+.banner-section .banner-inner .left p{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #0e72cc;
+    margin: 20px 0px 50px;
+    width:96%;
+}
+
+.banner-section .banner-inner .left .btn a{
+    background-color: #0e72cc;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 8px;
+    font-size:16px;
+}
+   
+.banner-section .banner-inner .right img{
+    width: 100%;
+}
+
+
+.feature-section{
+    width: 100%;
+    padding: 80 0px;
+}
+.flex-box{
+    display:flex
 }
 .box{
-    width: 120px;
-    height: 120px;
-    /*background-color:darkblue;*/
-    margin: 10px; 
-    text-align: center;
-    color: white;
-    line-height: 120px;
-}
-.box-1{
-  background-color:rgb(161, 6, 204);
-  order: 3;
-}
+    background: #f9799a;
+    display: flex;
+    padding:20px;
+    margin: 0px 10px;
+    border-radius: 8px;
 
-.box-2{
-   background-color:rgb(177, 115, 187);
-   order: 2;
 }
+/*header section css coder start*/
 
-.box-3{
-   background-color:rgb(191, 127, 122);
-   order: 1;
+.main{
+    display: flex;
 }
- 
-.btns button{
-    background: rgb(132, 11, 132);
-    padding: 12px 35px; 
-    margin: 20px;
-    color:violet;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-family: fantasy;
-    font-size: 20px;
-    letter-spacing:1px;
-    border:1px solid rgb(81, 5, 81);
-    border-radious: 10px 0px 10px 0px ;
+.logo{
+    flex-basis: 20%;
+}
+.menu{
+    flex-basis:  60%;
+}
+.button{
+    flex-basis: 20%;
+    background:#0e72cc;
+    color:#fff;
     transition:0.5s
-} 
- 
-.btns button:hover{
+}
+.button:hover{
     background: transparent;
-    color: violet;
-    border: 1px solid rgb(81, 5, 81);
-    border-radius: 0px 10px 0px 10px;
-    transition:0.5s;
+    color:#fff;
+   transition: 0.5s;
+}
+ul{
+    margin: 0;
+    padding:0;
+}
+li{
+    list-style-type:none;
+    display: inline-block;
+    margin-right: 15px;
+    text-transform:uppercase ;
+    font-size: 16px;
 }
